@@ -17,4 +17,105 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+
+  background-color: var(--color-background);
+  background-image: var(--background-image);
+  background-size: cover;
+
+  color: var(--color-main);
+}
+
+.header {
+  padding-inline: 14px;
+  padding-bottom: 25px;
+  padding-top: clamp(7.5rem, 7.214rem + 1.429vw, 8.5rem);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-main, #00cc14);
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 100px;
+  font-family: var(--font-family-interface);
+}
+
+.header__title {
+  font-size: clamp(3.063rem, 2.777rem + 1.429vw, 4.063rem);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.header__subtitle {
+  font-size: clamp(0.875rem, 0.714rem + 0.804vw, 1.438rem);
+  margin-bottom: 25px;
+  text-align: center;
+}
+.theme-menu__list {
+  display: grid;
+  justify-content: center;
+  gap: 14px;
+}
+
+.theme-menu__button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.theme-menu__button:hover {
+}
+
+.theme-menu__button:disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  position: relative;
+}
+
+.theme-menu__button:disabled:before {
+  content: "▶";
+  position: absolute;
+  left: -14px;
+}
+
+.content {
+  display: grid;
+  gap: 50px;
+}
+
+.streach {
+  width: 100%;
+  max-width: 700px;
+  margin-inline: auto;
+}
+.card {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-main, #00cc14);
+}
+.card__title {
+}
+.card__img-wrapper {
+  position: relative;
+  border-block: 2px solid var(--color-main, #00cc14);
+}
+.card__img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__content {
+  padding: 25px;
+}
+
+.card__text {
+  font: var(--font-base);
+  margin-bottom: 27px;
+  /* font:var(--font-base-bold); */
+  /* font:var(--font-interface-compact); */
+  /* font:var(--font-interface-hight); */
+  /* font:var(--font-interface-lg); */
+  /* font:var(--font-interface-md); */
+  /* font:var(--font-interface-sm); */
+}
+
+.card__text:last-of-type {
+  margin-bottom: 25px;
 }

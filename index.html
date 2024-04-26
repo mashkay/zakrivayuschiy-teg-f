@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -13,7 +14,10 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header streach">
+      <h1 class="header__title">&lt;/HTML&gt;</h1>
+      <p class="header__subtitle">Закрывающий тег</p>
+
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +44,56 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="content">
+      <section class="card streach">
+        <h2 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="card__img-wrapper">
+          <img src="./images/track.png" alt="Фото города" class="card__img" />
+        </div>
+        <div class="card__content">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+          <div class="card__actions">
+            <span class="card__likes">0</span>
+            <button type="button" class="card__action card__action_type_like">
+              Нравится
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="card streach">
+        <h2 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="card__img-wrapper">
+          <img src="./images/track.png" alt="Фото города" class="card__img" />
+        </div>
+        <div class="card__content">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+          <div class="card__actions">
+            <span class="card__likes">0</span>
+            <button type="button" class="card__action card__action_type_like">
+              Нравится
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

@@ -4,3 +4,46 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  color-scheme: light;
+  --color-background: var(--color-base-0);
+  --color-main: var(--color-base-100);
+  --background-image: repeating-linear-gradient(
+      90deg,
+      var(--color-base-20) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(var(--color-base-20) 0px 2px, transparent 2px 4px),
+    linear-gradient(var(--color-base-10) 0.01%, var(--color-base-90));
+}
+
+:root.theme-dark {
+  color-scheme: dark;
+  --color-background: var(--color-base-100);
+  --color-main: var(--color-green-0);
+  --background-image: repeating-linear-gradient(
+      90deg,
+      var(--color-base-100) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(var(--color-base-100) 0px 2px, transparent 2px 4px),
+    linear-gradient(var(--color-green-10), var(--color-green-20));
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: var(--color-base-0);
+    --color-main: var(--color-base-100);
+    --background-image: repeating-linear-gradient(
+        90deg,
+        var(--color-base-20) 0px 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(
+        var(--color-base-20) 0px 2px,
+        transparent 2px 4px
+      ),
+      linear-gradient(var(--color-base-10) 0.01%, var(--color-base-90));
+  }
+}
