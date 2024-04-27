@@ -13,6 +13,7 @@
 
   --color-background: var(--color-base-100);
   --color-main: var(--color-green-0);
+  --color-button-text: var(--color-main);
 
   --background-image: repeating-linear-gradient(
       90deg,
@@ -34,7 +35,7 @@
   --font-weight-bold: 785;
 
 
-  --font-base: 400 18px/1.17 var(--font-family-base);
+  /* --font-base: 400 18px/1.17 var(--font-family-base);
   --font-base-bolder: 465 18px/1.17 var(--font-family-base);
   --font-heavy: 700 18px / normal var(--font-family-base);
   --font-heavy-bolder: 785 18px / normal var(--font-family-base);
@@ -43,5 +44,5 @@
   --font-interface-hight: 400 14px/1.5 var(--font-family-interface);
   --font-interface-lg: 400 65px / normal var(--font-family-interface);
   --font-interface-md: 400 23px / normal var(--font-family-interface);
-  --font-interface-sm: 400 14px / normal var(--font-family-interface);
+  --font-interface-sm: 400 14px / normal var(--font-family-interface); */
 }

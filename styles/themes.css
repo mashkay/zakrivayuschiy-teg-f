@@ -9,6 +9,7 @@
   color-scheme: light;
   --color-background: var(--color-base-0);
   --color-main: var(--color-base-100);
+  --color-button-text: var(--color-background);
 
   --font-weight-base: 400;
   --font-weight-bold: 700;
@@ -25,6 +26,7 @@
   color-scheme: dark;
   --color-background: var(--color-base-100);
   --color-main: var(--color-green-0);
+  --color-button-text: var(--color-main);
   --font-weight-base: 465;
   --font-weight-bold: 785;
 
@@ -41,6 +43,7 @@
   :root {
     --color-background: var(--color-base-0);
     --color-main: var(--color-base-100);
+    --color-button-text: var(--color-background);
     --background-image: repeating-linear-gradient(
         90deg,
         var(--color-base-20) 0px 2px,
