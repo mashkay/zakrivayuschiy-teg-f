@@ -21,6 +21,7 @@
   background-color: var(--color-background);
   background-image: var(--background-image);
   background-size: cover;
+  background-attachment: fixed;
 
   color: var(--color-main);
   margin-bottom: 100px;
@@ -66,7 +67,6 @@
   text-transform: uppercase;
   line-height: normal;
   font-size: 14px;
-  
 }
 
 .theme-menu__button::after {
@@ -127,13 +127,34 @@
   line-height: normal;
   padding: 3px 24px 3px 10px;
   font-variation-settings: "wght" var(--font-weight-heavy, 785);
-
 }
 .card__img-wrapper {
   position: relative;
   border-block: 2px solid var(--color-main, #00cc14);
   aspect-ratio: 1;
 }
+.card__img-lable {
+  position: absolute;
+  top: 25px;
+  right: clamp(0.688rem, 0.438rem + 1.25vw, 1.563rem);
+  z-index: 1;
+  font-size: 14px;
+  font-family: var(--font-family-interface);
+  text-transform: uppercase;
+  line-height: normal;
+  color: var(--color-main, #00cc14);
+  mix-blend-mode: hard-light;
+  text-shadow: -1px 0 var(--color-background), 0 1px var(--color-background),
+    1px 0 var(--color-background), 0 -1px var(--color-background);
+}
+
+@supports (-webkit-text-stroke: 1px #000000) {
+  .card__img-lable {
+    -webkit-text-stroke: 1px var(--color-background);
+    text-shadow: none;
+  }
+}
+
 .card__img {
   width: 100%;
   height: 100%;
@@ -143,6 +164,15 @@
 
 .card__content {
   padding: 25px;
+}
+
+.card__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__button {
+  width: 130px;
 }
 
 .card__text {
@@ -169,9 +199,8 @@
   text-align: center;
   justify-content: center;
   padding: 9px 17px;
-  
+  line-height: 0.9;
 }
-
 
 .save-button {
   font-family: var(--font-family-interface);
@@ -226,33 +255,34 @@
   }
 }
 
-
 .save-dialog {
   background-color: var(--color-background);
   border: 2px solid var(--color-main, #00cc14);
-  max-width:360px;
+  max-width: 360px;
   font-family: var(--font-family-interface);
   color: var(--color-main);
   text-transform: uppercase;
-  padding-block:  30px;
-  
-
+  padding-block: 30px;
 }
 .save-dialog[open] {
   display: grid;
   column-gap: 20px;
   row-gap: 30px;
-  grid-template-areas: 
-  "icon text"
-  "button button";
+  grid-template-areas:
+    "icon text"
+    "button button";
 
   justify-items: stretch;
   align-items: center;
+}
 
+.save-dialog::backdrop {
+  opacity: 0.75;
+  background: var(--color-base-100, #000);
 }
 
 .save-dialog__button {
-grid-area: button;
+  grid-area: button;
 }
 
 .save-dialog__icon {
