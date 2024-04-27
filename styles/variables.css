@@ -15,6 +15,13 @@
   --color-main: var(--color-green-0);
   --color-button-text: var(--color-main);
 
+  --font-family-base: "Inter", sans-serif;
+  --font-family-interface: "PressStart2P", sans-serif;
+
+  --font-weight-interface: 400;
+  --font-weight-base: 465;
+  --font-weight-bold: 785;
+
   --background-image: repeating-linear-gradient(
       90deg,
       var(--color-base-100) 0px 2px,
@@ -27,22 +34,4 @@
     linear-gradient(var(--color-green-10), var(--color-green-20));
 
   /* fonts */
-
-  --font-family-base: "Inter", sans-serif;
-  --font-family-interface: "PressStart2P", sans-serif;
-
-  --font-weight-base: 465;
-  --font-weight-bold: 785;
-
-
-  /* --font-base: 400 18px/1.17 var(--font-family-base);
-  --font-base-bolder: 465 18px/1.17 var(--font-family-base);
-  --font-heavy: 700 18px / normal var(--font-family-base);
-  --font-heavy-bolder: 785 18px / normal var(--font-family-base);
-
-  --font-interface-compact: 400 14px/0.9 var(--font-family-interface);
-  --font-interface-hight: 400 14px/1.5 var(--font-family-interface);
-  --font-interface-lg: 400 65px / normal var(--font-family-interface);
-  --font-interface-md: 400 23px / normal var(--font-family-interface);
-  --font-interface-sm: 400 14px / normal var(--font-family-interface); */
 }

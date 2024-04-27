@@ -13,6 +13,9 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+:root {
+  --transition-fill-linear: fill 0.3s linear;
+}
 
 @keyframes inline-twitch {
   0% {
@@ -21,11 +24,87 @@
   100% {
     transform: translateX(0);
   }
-
 }
 
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
 
-.like-icon #core {
-  fill: red;
-  /* transition: fill 0.3s; */
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes opacify {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.like-icon .main-body {
+  fill: transparent;
+  transition: var(--transition-fill-linear);
+}
+
+/* .like-icon.is-liked .core {
+  fill: var(--color-green-0);
+} */
+
+.like-icon .core {
+  fill: transparent;
+  transition: var(--transition-fill-linear) 0.03s;
+}
+
+.like-icon:hover .core {
+  fill: var(--color-main);
+  transition: var(--transition-fill-linear);
+}
+
+.like-icon:hover .main-body {
+  fill: var(--color-main);
+  transition: var(--transition-fill-linear) 0.05s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--color-red);
+  transition: var(--transition-fill-linear) 0.05s;
+}
+
+.like-icon:active .core {
+  fill: var(--color-red);
+  transition: var(--transition-fill-linear);
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--color-red);
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--color-red);
+  transition: var(--transition-fill-linear) 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--color-red);
+  transition: var(--transition-fill-linear);
+}
+
+.like-icon.is-liked .heart {
+  animation: scale-up 0.3s 0.1s ease-in alternate;
+  transform-origin: 50%;
+}
+
+.like-icon.is-liked .sparks {
+  animation: opacify 0.3s 0.3s ease-in alternate;
+}
+
+.like-icon .contour {
+  fill: var(--color-main);
+  transition: fill 0.1s linear;
 }

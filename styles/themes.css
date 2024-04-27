@@ -35,7 +35,10 @@
       var(--color-base-100) 0px 2px,
       transparent 2px 4px
     ),
-    repeating-linear-gradient(var(--color-base-100) 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(
+      var(--color-base-100) 0px 2px,
+      transparent 2px 4px
+    ),
     linear-gradient(var(--color-green-10), var(--color-green-20));
 }
 
@@ -44,6 +47,9 @@
     --color-background: var(--color-base-0);
     --color-main: var(--color-base-100);
     --color-button-text: var(--color-background);
+    --font-weight-base: 400;
+    --font-weight-bold: 700;
+
     --background-image: repeating-linear-gradient(
         90deg,
         var(--color-base-20) 0px 2px,
