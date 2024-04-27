@@ -11,18 +11,8 @@
   --color-green-20: #004306;
   --color-red: #ff0000;
 
-  --color-background: var(--color-base-100);
-  --color-main: var(--color-green-0);
-  --color-button-text: var(--color-main);
-
-  --font-family-base: "Inter", sans-serif;
-  --font-family-interface: "PressStart2P", sans-serif;
-
-  --font-weight-interface: 400;
-  --font-weight-base: 465;
-  --font-weight-bold: 785;
-
-  --background-image: repeating-linear-gradient(
+  /* backgrounds */
+  --bg-gradient-100: repeating-linear-gradient(
       90deg,
       var(--color-base-100) 0px 2px,
       transparent 2px 4px
@@ -33,5 +23,27 @@
     ),
     linear-gradient(var(--color-green-10), var(--color-green-20));
 
+  --bg-gradient-0: repeating-linear-gradient(
+      90deg,
+      var(--color-base-20) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(var(--color-base-20) 0px 2px, transparent 2px 4px),
+    linear-gradient(var(--color-base-10) 0.01%, var(--color-base-90));
+
   /* fonts */
+  --font-family-base: "Inter", sans-serif;
+  --font-family-interface: "PressStart2P", sans-serif;
+
+  --font-weight-interface: 400;
+
+  /* dark theme vars */
+  --color-background: var(--color-base-100);
+  --color-main: var(--color-green-0);
+  --color-button-text: var(--color-main);
+
+  --font-weight-base: 465;
+  --font-weight-bold: 785;
+
+  --background-image: var(--bg-gradient-100);
 }
