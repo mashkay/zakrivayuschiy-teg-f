@@ -223,7 +223,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right;
+  object-position: center;
 }
 
 .card__content {
@@ -247,7 +247,6 @@
   margin-bottom: 25px;
 }
 
-/* ✦ card__icon-button — для кнопки, оборачивающей иконку */
 .card__icon-button {
   background: none;
   border: var(--border-width-line) transparent;
@@ -263,7 +262,6 @@
   outline: none;
 }
 
-/* ✦ card__like-button — для кнопки Like рядом с иконкой */
 .card__like-button {
   width: 130px;
 }
@@ -288,7 +286,6 @@
 .save-dialog {
   background-color: var(--color-background);
   border: var(--border-main);
-  /* max-width: 360px; */
   font-family: var(--font-family-interface);
   color: var(--color-main);
   text-transform: uppercase;
@@ -335,24 +332,32 @@
   filter: invert(1);
 }
 .filter-grayscale {
-  filter: grayscale(1);
+  filter: grayscale(70%);
+}
+.filter-saturate {
+  filter: saturate(200%);
+}
+
+.filter-shine {
+  filter: brightness(150%) saturate(200%);
+  mix-blend-mode: darken;
+
+
 }
 .filter-sepia {
   filter: sepia(1);
 }
 .filter-brightness {
-  filter: brightness(150%);
+  filter: brightness(120%);
 }
 .filter-contrast {
   filter: contrast(200%);
 }
 .filter-hue-rotate {
-  filter: hue-rotate(30deg);
+  filter: hue-rotate(70deg);
 }
 
-.filter-blue-contrast {
-  filter: blur(20px) contrast(400%);
-}
+
 
 .filter-crazy {
   filter: hue-rotate(90deg) saturate(200%) brightness(150%);
