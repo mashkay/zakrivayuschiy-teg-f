@@ -12,3 +12,14 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+
+@keyframes inline-twitch {
+  0% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+
+}

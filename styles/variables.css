@@ -30,10 +30,9 @@
   --font-family-base: "Inter", sans-serif;
   --font-family-interface: "PressStart2P", sans-serif;
 
-  --font-weight-base: 400;
-  --font-weight-bolder: 465;
-  --font-weight-heavy: 700;
-  --font-weight-heaver: 785;
+  --font-weight-base: 465;
+  --font-weight-bold: 785;
+
 
   --font-base: 400 18px/1.17 var(--font-family-base);
   --font-base-bolder: 465 18px/1.17 var(--font-family-base);
