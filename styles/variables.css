@@ -1,49 +1,36 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  /* color names */
-  --color-base-100: #000000;
-  --color-base-90: #1a1a1a;
-  --color-base-20: #d3d3d3;
-  --color-base-10: #e7e7e7;
-  --color-base-0: #ffffff;
-  --color-green-0: #00cc14;
-  --color-green-10: #007f0c;
-  --color-green-20: #004306;
-  --color-red: #ff0000;
-
-  /* backgrounds */
-  --bg-gradient-100: repeating-linear-gradient(
-      90deg,
-      var(--color-base-100) 0px 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(
-      var(--color-base-100) 0px 2px,
-      transparent 2px 4px
-    ),
-    linear-gradient(var(--color-green-10), var(--color-green-20));
-
-  --bg-gradient-0: repeating-linear-gradient(
-      90deg,
-      var(--color-base-20) 0px 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(var(--color-base-20) 0px 2px, transparent 2px 4px),
-    linear-gradient(var(--color-base-10) 0.01%, var(--color-base-90));
+  /* color palette */
+  --clr-palette-black: #000000;
+  --clr-palette-blackish: #1a1a1a;
+  --clr-palette-light-gray: #d3d3d3;
+  --clr-palette-light-whisper: #e7e7e7;
+  --clr-palette-white: #ffffff;
+  --clr-palette-lime: #00cc14;
+  --clr-palette-office-green: #007f0c;
+  --clr-palette-cucumber: #004306;
+  --clr-palette-red: #ff0000;
 
   /* fonts */
   --font-family-base: "Inter", sans-serif;
-  --font-family-interface: "PressStart2P", sans-serif;
+  --font-family-interface: "PressStart2P", fantasy;
 
   --font-weight-interface: 400;
 
+  /* animation vars */
+  --transition-fill-linear: fill 0.3s linear;
+
+  /* all themes colors */
+  --color-heart: var(--clr-palette-red);
+
   /* dark theme vars */
-  --color-background: var(--color-base-100);
-  --color-main: var(--color-green-0);
+  --color-background: var(--clr-palette-black);
+  --color-main: var(--clr-palette-lime);
+
   --color-button-text: var(--color-main);
 
   --font-weight-base: 465;
   --font-weight-bold: 785;
 
-  --background-image: var(--bg-gradient-100);
+  --bg-gradient-start-position: 0;
 }

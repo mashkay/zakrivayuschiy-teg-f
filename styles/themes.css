@@ -7,9 +7,13 @@
 
 :root.theme-light {
   color-scheme: light;
-  --color-background: var(--color-base-0);
-  --color-main: var(--color-base-100);
+  --color-background: var(--clr-palette-white);
+  --color-main: var(--clr-palette-black);
   --color-button-text: var(--color-background);
+  --color-bg-gradient-main: var(--clr-palette-light-gray);
+  --color-bg-gradient-accent: var(--clr-palette-light-whisper);
+  --color-bg-gradient-fade: var(--clr-palette-blackish);
+  --gardient-start: 0.01%;
 
   --font-weight-base: 400;
   --font-weight-bold: 700;
@@ -18,9 +22,13 @@
 
 :root.theme-dark {
   color-scheme: dark;
-  --color-background: var(--color-base-100);
-  --color-main: var(--color-green-0);
+  --color-background: var(--clr-palette-black);
+  --color-main: var(--clr-palette-lime);
   --color-button-text: var(--color-main);
+  --color-bg-gradient-main: var(--clr-palette-black);
+  --color-bg-gradient-accent: var(--clr-palette-office-green);
+  --color-bg-gradient-fade: var(--clr-palette-cucumber);
+  --gardient-start: 0;
   --font-weight-base: 465;
   --font-weight-bold: 785;
 
@@ -29,9 +37,13 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --color-background: var(--color-base-0);
-    --color-main: var(--color-base-100);
+    --color-background: var(--clr-palette-white);
+    --color-main: var(--clr-palette-black);
     --color-button-text: var(--color-background);
+    --color-bg-gradient-main: var(--clr-palette-black);
+    --color-bg-gradient-accent: var(--clr-palette-office-green);
+    --color-bg-gradient-fade: var(--clr-palette-cucumber);
+    --gardient-start: 0;
     --font-weight-base: 400;
     --font-weight-bold: 700;
 

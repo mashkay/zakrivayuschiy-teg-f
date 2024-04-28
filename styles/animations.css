@@ -13,10 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-:root {
-  --transition-fill-linear: fill 0.3s linear;
-}
-
 @keyframes inline-twitch {
   0% {
     transform: translateX(4px);
@@ -51,10 +47,6 @@
   transition: var(--transition-fill-linear);
 }
 
-/* .like-icon.is-liked .core {
-  fill: var(--color-green-0);
-} */
-
 .like-icon .core {
   fill: transparent;
   transition: var(--transition-fill-linear) 0.03s;
@@ -71,27 +63,27 @@
 }
 
 .like-icon:active .main-body {
-  fill: var(--color-red);
+  fill: var(--color-heart);
   transition: var(--transition-fill-linear) 0.05s;
 }
 
 .like-icon:active .core {
-  fill: var(--color-red);
+  fill: var(--color-heart);
   transition: var(--transition-fill-linear);
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--color-red);
+  fill: var(--color-heart);
   transition: fill 0.3s 0.06s linear;
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--color-red);
+  fill: var(--color-heart);
   transition: var(--transition-fill-linear) 0.05s;
 }
 
 .like-icon.is-liked .core {
-  fill: var(--color-red);
+  fill: var(--color-heart);
   transition: var(--transition-fill-linear);
 }
 
