@@ -191,11 +191,12 @@
   line-height: normal;
   padding: 3px 24px 3px 10px;
   font-variation-settings: "wght" var(--font-weight-bold, 785);
+  border-bottom: var(--border-main);
 }
 .card__img-wrapper {
   position: relative;
-  border-block: var(--border-main);
   aspect-ratio: 1;
+  overflow: hidden;
 }
 .card__img-label {
   position: absolute;
@@ -228,6 +229,7 @@
 
 .card__content {
   padding: 25px;
+  border-top: var(--border-main);
 }
 
 .card__actions {
@@ -328,36 +330,30 @@
 .filter-blur {
   filter: blur(5px);
 }
+
 .filter-invert {
-  filter: invert(1);
-}
-.filter-grayscale {
-  filter: grayscale(70%);
-}
-.filter-saturate {
-  filter: saturate(200%);
+  filter: invert(80%);
 }
 
-.filter-shine {
-  filter: brightness(150%) saturate(200%);
-  mix-blend-mode: darken;
-
-
+.filter-opacity {
+  filter: opacity(70%);
 }
-.filter-sepia {
-  filter: sepia(1);
+
+.filter-sepia-invert {
+  filter: sepia(60%) brightness(150%) invert(80%) saturate(200%);
 }
+
 .filter-brightness {
-  filter: brightness(120%);
+  filter: brightness(120%) opacity(90%);
 }
-.filter-contrast {
-  filter: contrast(200%);
-}
+
 .filter-hue-rotate {
-  filter: hue-rotate(70deg);
+  filter: hue-rotate(-30deg);
 }
 
-
+.filter-hue-rotate-transparent {
+  filter: hue-rotate(-10deg) opacity(80%);
+}
 
 .filter-crazy {
   filter: hue-rotate(90deg) saturate(200%) brightness(150%);
