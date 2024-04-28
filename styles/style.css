@@ -292,7 +292,8 @@
   color: var(--color-main);
   text-transform: uppercase;
   padding: 30px;
-  max-width: clamp(21.563rem, 20.409rem + 4.923vi, 22.563rem);
+  max-width: 355px;
+  /* max-width: clamp(21.563rem, 20.409rem + 4.923vi, 22.563rem); */
 }
 
 .save-dialog[open] {
