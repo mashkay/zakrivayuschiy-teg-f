@@ -314,6 +314,11 @@
   background: var(--color-base-100, #000);
 }
 
+.save-dialog__icon {
+  width: 39px;
+
+}
+
 @media (width<=375px) {
   .save-button__icon {
     width: 28px;
