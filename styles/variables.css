@@ -19,6 +19,7 @@
 
   /* animation vars */
   --transition-fill-linear: fill 0.3s linear;
+  --transition-time-func: 0.3s ease;
 
   /* all themes colors */
   --color-heart: var(--clr-palette-red);
@@ -26,11 +27,30 @@
   /* dark theme vars */
   --color-background: var(--clr-palette-black);
   --color-main: var(--clr-palette-lime);
-
-  --color-button-text: var(--color-main);
-
+  --color-button-text: var(--clr-palette-lime);
+  --color-bg-gradient-main: var(--clr-palette-black);
+  --color-bg-gradient-accent: var(--clr-palette-office-green);
+  --color-bg-gradient-fade: var(--clr-palette-cucumber);
+  --bg-gradient-start-position: 0;
   --font-weight-base: 465;
   --font-weight-bold: 785;
 
-  --bg-gradient-start-position: 0;
+  /* backgrounds */
+  --background-image: repeating-linear-gradient(
+      90deg,
+      var(--color-bg-gradient-main) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      var(--color-bg-gradient-main) 0px 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      var(--color-bg-gradient-accent) var(--bg-gradient-start-position),
+      var(--color-bg-gradient-fade)
+    );
+
+  /* borders */
+  --border-width-line: 2px solid;
+  --border-main: var(--border-width-line) var(--color-main);
 }

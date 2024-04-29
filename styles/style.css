@@ -15,26 +15,11 @@
 */
 
 .page {
-  --transition-time-func: 0.3s ease;
-  --border-width-line: 2px solid;
-  --border-main: var(--border-width-line) var(--color-main, #00cc14);
   min-inline-size: 320px;
   min-block-size: 100dvb;
 
   background-color: var(--color-background);
-  background-image: repeating-linear-gradient(
-      90deg,
-      var(--color-bg-gradient-main) 0px 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(
-      var(--color-bg-gradient-main) 0px 2px,
-      transparent 2px 4px
-    ),
-    linear-gradient(
-      var(--color-bg-gradient-accent) var(--bg-gradient-start-position),
-      var(--color-bg-gradient-fade)
-    );
+  background-image: var(--background-image);
   background-size: cover;
   background-attachment: fixed;
 
