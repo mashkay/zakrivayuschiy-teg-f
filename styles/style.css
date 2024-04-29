@@ -311,7 +311,7 @@
 
 .save-dialog::backdrop {
   opacity: 0.75;
-  background: var(--clr-palette-black, #000);
+  background: var(--color-background);
 }
 
 .save-dialog__icon {
